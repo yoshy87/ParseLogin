@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Matricula:"
+        android:id="@+id/txt_matricola" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/edit_matricola"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/Matricola">
+        </EditText>
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID Student:"
+        android:id="@+id/txt_imei" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_imei"
+        android:text="@string/Imei"
+        android:editable="false" />
+    
+<Button
+    android:id="@+id/write_tag"
+    android:layout_centerHorizontal="true"
+   	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edit_imei"
+    android:text="@string/write_to_tag">
+</Button>
+
+</RelativeLayout>
+
